@@ -1,0 +1,56 @@
+-
+  name: 登录成功获取token，返回200
+  description: 输入用账号和密码获取token
+  request:
+    method: post
+    url: http://localhost:3000/api/auth/login    #获取token登录用这个
+    headers:
+      Content-Type: application/json
+    data:
+         username : admin
+         password : '123456'
+  expected:
+    status_code: 200
+
+#-
+#  name: 密码格式问题
+#  description: 输入密码错误或未输入密码或密码格式有问题，返回400
+#  request:
+#    method: post
+#    url: http://localhost:3000/api/auth/login
+#    headers:
+#      Content-Type: application/json
+#    data:
+#         username : admin
+#         password :
+#  expected:
+#    status_code: 400
+#
+#
+#-
+#  name: 账号格式问题
+#  description: 输入账号错误或未输入账号或账号格式有问题，返回400
+#  request:
+#    method: post
+#    url: http://localhost:3000/api/auth/login
+#    headers:
+#      Content-Type: application/json
+#    data:
+#         username :
+#         password : '123456'
+#  expected:
+#    status_code: 400
+#
+#-
+#  name: 账号密码格式均有问题
+#  description: 账号密码格式均有问题，返回400
+#  request:
+#    method: post
+#    url: http://localhost:3000/api/auth/login
+#    headers:
+#      Content-Type: application/json
+#    data:
+#         username :
+#         password :
+#  expected:
+#    status_code: 400

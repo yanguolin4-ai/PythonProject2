@@ -1,0 +1,1 @@
+{"code":200,"data":{"id":1,"name":"张伟","gender":"男","age":48,"department":"内科","title":"主任医师","specialty":"心血管内科、高血压、冠心病","phone":"13800000001","schedule":{"monday":"上午","tuesday":"全天","wednesday":"上午","thursday":"休息","friday":"全天","saturday":"上午","sunday":"休息"},"introduction":"从事内科临床工作25年，擅长心血管系统疾病的诊治，发表论文10余篇。"}}

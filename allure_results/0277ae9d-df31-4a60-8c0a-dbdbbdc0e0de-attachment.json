@@ -1,0 +1,1 @@
+{'id': 1, 'name': '王建国', 'gender': '男', 'age': 65, 'phone': '13800138001', 'idCard': '110101195901011234', 'department': '内科', 'doctor': '张伟', 'diagnosis': '高血压3级', 'status': '住院中', 'admissionDate': '2025-04-20', 'bedNumber': 'A-301', 'notes': '需每日监测血压，注意低盐饮食'}

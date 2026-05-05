@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "allure": "^3.6.2",
+    "pyyaml": "^0.0.1"
+  }
+}

@@ -1,0 +1,15 @@
+# 环境配置 - 通过 TEST_ENV 环境变量切换
+# 用法: set TEST_ENV=test && python main.py
+
+dev:
+  base_url: http://localhost:3000
+
+test:
+  base_url: http://localhost:3000
+
+prod:
+  base_url: https://api.hospital.com
+
+default_user:
+  username: admin
+  password: '123456'

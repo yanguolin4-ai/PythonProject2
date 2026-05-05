@@ -1,0 +1,95 @@
+-
+  name: 获取医生列表-默认分页
+  description: 不传分页参数，使用默认值，返回200
+  request:
+    method: get
+    url: http://localhost:3000/api/doctors
+    headers:
+      Content-Type: application/json
+    data: {}
+  expected:
+    status_code: 200
+    code: 200
+
+-
+  name: 获取医生列表-分页查询
+  description: 请求第1页数据，每页10条，返回200
+  request:
+    method: get
+    url: http://localhost:3000/api/doctors
+    headers:
+      Content-Type: application/json
+    data:
+      page: 1
+      pageSize: 10
+  expected:
+    status_code: 200
+    code: 200
+
+-
+  name: 获取医生列表-第2页
+  description: 请求第2页数据，返回200
+  request:
+    method: get
+    url: http://localhost:3000/api/doctors
+    headers:
+      Content-Type: application/json
+    data:
+      page: 2
+      pageSize: 10
+  expected:
+    status_code: 200
+    code: 200
+
+-
+  name: 获取存在的医生详情
+  description: 查询ID为1的医生详情，返回200
+  request:
+    method: get
+    url: http://localhost:3000/api/doctors/1
+    headers:
+      Content-Type: application/json
+    data: {}
+  expected:
+    status_code: 200
+    code: 200
+
+-
+  name: 获取不存在的医生详情
+  description: 查询不存在的医生ID，返回404
+  request:
+    method: get
+    url: http://localhost:3000/api/doctors/999
+    headers:
+      Content-Type: application/json
+    data: {}
+  expected:
+    status_code: 404
+
+-
+  name: 按科室查询医生
+  description: 查询内科的医生列表，返回200
+  request:
+    method: get
+    url: http://localhost:3000/api/doctors
+    headers:
+      Content-Type: application/json
+    data:
+      department: 内科
+  expected:
+    status_code: 200
+    code: 200
+
+-
+  name: 按职称查询医生
+  description: 查询主任医师列表，返回200
+  request:
+    method: get
+    url: http://localhost:3000/api/doctors
+    headers:
+      Content-Type: application/json
+    data:
+      title: 主任医师
+  expected:
+    status_code: 200
+    code: 200
